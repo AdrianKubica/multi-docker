@@ -2,6 +2,9 @@ sudo: required
 services:
   - docker
 
+notifications:
+  slack: privateuser-workspace:5hybgvvnXJOVAuc01WiKfrmX
+
 before_install:
   - docker build -t adriankubica/react-test -f ./client/Dockerfile.dev ./client
 
